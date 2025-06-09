@@ -1,0 +1,77 @@
+@import-normalize;
+
+@font-face {
+  font-family: "Inter Regular";
+  src: url("./assets/fonts/Inter-18pt-Regular.ttf") format("truetype");
+  font-weight: normal; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Medium";
+  src: url("./assets/fonts/Inter-18pt-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Semibold";
+  src: url("./assets/fonts/Inter-18pt-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+:root {
+  --inputs-color: #F7F7F7;
+  --button-color: #E44848;
+  --button-hover-color: #D84343;
+  --main-color: #101828;
+  --white-color: #FFFFFF;
+  --rating-color: #FFC531;
+  --gray-light-color: #DADDE1;
+  --gray-color: #6C717B;
+  --badges-color: #F2F4F7;
+  --text-color: #475467;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: "Inter Regular";
+  font-size: 16px; /* Default font size */
+  color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

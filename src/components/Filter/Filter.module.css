@@ -1,0 +1,118 @@
+.filterForm {
+    width: 360px;  
+}
+
+.locationLabel {
+    display: block;
+    color: var(--gray-color);
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.selectWrap {
+    position: relative;
+}
+
+.mapIcon {
+    position: absolute;
+    fill: var(--gray-color);
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill var(--transition);
+}
+
+.focusedIcon {
+    fill: var(--main-color);
+}
+
+.filterTitle {
+    color: var(--text-color);
+    font-family: "Inter Medium";
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.searchParamsTitle {
+    font-family: "Inter Semibold";
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.searchParamsTitle:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 24px 0px;
+    background: var(--gray-light-color);
+}
+
+.equipmentList, .venicleTypeList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    margin-bottom: 32px;
+}
+
+.equipmentListItem, .venicleTypeListItem {
+    width: 112px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 1px solid var(--gray-light-color);
+    cursor: pointer;
+    transition: border-color var(--transition);
+}
+
+.equipmentListItem:hover,
+.venicleTypeListItem:hover {
+    border-color: var(--button-color);
+}
+
+.active {
+    border-color: var(--button-color);
+}
+
+.equipmentName, .venicleTypeName {
+    font-family: "Inter Medium";
+    letter-spacing: -0.005em;
+    text-align: center;
+}
+
+.searchBtn {
+    padding: 16px 56.5px;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 200px;
+    color: var(--white-color);
+    font-family: "Inter Medium";
+    line-height: 1.5;
+    letter-spacing: -0.005em;
+    transition: background-color var(--transition);
+}
+
+.searchBtn:hover {
+    background-color: var(--button-hover-color);
+}
+
+@media screen and (max-width: 1439px) {
+    .filterForm {
+        width: 640px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filterForm {
+        width: 340px;
+    }
+
+    .equipmentListItem,
+    .venicleTypeListItem {
+        width: calc((100% - 24px)/3);
+    }
+}
