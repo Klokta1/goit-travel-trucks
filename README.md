@@ -68,8 +68,8 @@ The project is built using:
 
 ## Installation Guide
    ```bash
-   git clone https://github.com/Klokta1/travel-trucks.git
-   cd travel-trucks
+   git clone https://github.com/Klokta1/goit-travel-trucks.git
+   cd goit-travel-trucks
    npm install
    npm start
 
