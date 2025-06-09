@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { ReactComponent as Logo } from "../../assets/images/logo.svg";
+import Logo from '../../assets/images/logo.svg?react';
 import { useSelector } from "react-redux";
 import { selectFavorites } from "../../redux/campers/selectors";
 import css from "./Header.module.css";
